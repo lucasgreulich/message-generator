@@ -33,7 +33,7 @@ const teamArrays ={
     "Washington Capitals",
     "Winnipeg Jets"
   ],
-    baseball:[
+    mlb:[
     "Arizona Diamondbacks",
     "Atlanta Braves",
     "Baltimore Orioles",
@@ -64,7 +64,7 @@ const teamArrays ={
     "Texas Rangers",
     "Toronto Blue Jays",
     "Washington Nationals"],
-    football:[
+    nfl:[
     "Arizona Cardinals",
     "Atlanta Falcons",
     "Baltimore Ravens",
@@ -98,3 +98,17 @@ const teamArrays ={
     "Tennessee Titans",
     "Washington Football Team"],
 };
+//The random nhl team selection for message
+const randNhlSelection = Math.floor(Math.random()* teamArrays.nhl.length)
+
+
+
+console.log(randNhlSelection)
+//The random MLB team selection for message
+const randMlbSelection = Math.floor(Math.random()* teamArrays.mlb.length)
+
+console.log(randMlbSelection)
+//The random nfl team selectionfor message 
+const randNflSelection = Math.floor(Math.random()* teamArrays.nfl.length)
+
+console.log(randNflSelection)
