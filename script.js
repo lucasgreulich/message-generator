@@ -102,12 +102,21 @@ const teamArrays ={
 const randNhlSelection = Math.floor(Math.random()* teamArrays.nhl.length)
 const nhlPutToWords = teamArrays.nhl[randNhlSelection]
 
-console.log(nhlPutToWords)
 //The random MLB team selection for message
 const randMlbSelection = Math.floor(Math.random()* teamArrays.mlb.length)
 const mlbPutToWords = teamArrays.mlb[randMlbSelection]
-console.log(mlbPutToWords)
+
 //The random nfl team selectionfor message 
 const randNflSelection = Math.floor(Math.random()* teamArrays.nfl.length)
 const nflPutToWords = teamArrays.nfl[randNflSelection]
-console.log(nflPutToWords)
+
+
+//creat the random generation function
+const randomGenMessage = () =>{
+  console.log(`These are your new favorite teams 
+  NHL: ${nhlPutToWords} 
+  MLB: ${mlbPutToWords} 
+  NFL: ${nflPutToWords}`)
+};
+
+randomGenMessage()
