@@ -1,3 +1,4 @@
+
 const teamArrays ={
     nhl:[
     "Anaheim Ducks",
@@ -113,10 +114,12 @@ const nflPutToWords = teamArrays.nfl[randNflSelection]
 
 //creat the random generation function
 const randomGenMessage = () =>{
-  console.log(`These are your new favorite teams 
-  NHL: ${nhlPutToWords} 
-  MLB: ${mlbPutToWords} 
-  NFL: ${nflPutToWords}`)
-};
+  const messageCon = document.getElementById("message").innerHTML =
+  (`These are your new favorite teams <br> 
+  NHL: ${nhlPutToWords} <br>
+  MLB: ${mlbPutToWords} <br>
+  NFL: ${nflPutToWords}`)};
 
-randomGenMessage()
+
+
+randomGenMessage(messageCon)
